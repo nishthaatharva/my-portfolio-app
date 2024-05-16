@@ -1,0 +1,182 @@
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar-color">
+  <div class="container">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row row-intro" style="margin-top: 80px">
+    <div class="col-md-6">
+      <!-- Left side with SVG image -->
+      <img
+        src="assets/profile-data.svg"
+        alt="Profile Data SVG"
+        width="500"
+        height="200"
+        style="margin-top: -30px; margin-left: -50px"
+      />
+    </div>
+    <div class="col-md-6">
+      <!-- Right side with name and description -->
+      <h3 style="text-align: right">Hi There, I am</h3>
+      <h3
+        [style.font-family]="'Dancing Script'"
+        style="font-size: 50px; color: #1565c0"
+      >
+        {{ name }}
+      </h3>
+      <p style="text-align: center">{{ description }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row" style="margin-top: 50px">
+    <div class="col-md-12 text-center">
+      <h2>Projects</h2>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 32px">
+    <div class="col-md-4 mb-4">
+      <div class="card card-custom">
+        <div class="card-front">
+          <div class="card-body">
+            <h5 class="card-title">Commission Management System</h5>
+            <p class="card-text">
+              Developed a Commission Management System to streamline and
+              automate commission-related processes. Used .NET 8 for backend
+              development and Angular 17 for the frontend.
+            </p>
+          </div>
+        </div>
+        <div class="card-back">
+          <img
+            src="assets/commission.svg"
+            alt="Project 1 SVG"
+            width="200"
+            height="200"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card card-custom">
+        <div class="card-front">
+          <div class="card-body">
+            <h5 class="card-title">Task Management System</h5>
+            <p class="card-text">
+              Contributed to the development of a Task Management System aimed
+              at optimising task assignment and monitoring within the
+              organisation. Employed .NET 8 for backend API development and
+              Blazor WebAssembly for the frontend.
+            </p>
+          </div>
+        </div>
+        <div class="card-back">
+          <img
+            src="assets/task-manage.svg"
+            alt="Project 2 SVG"
+            width="220"
+            height="220"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card card-custom">
+        <div class="card-front">
+          <div class="card-body">
+            <h5 class="card-title">Apartment Booking System</h5>
+            <p class="card-text">
+              Led the development of an Apartment Booking System designed to
+              facilitate the reservation and management of apartment rentals.
+              Utilized .NET 8 for backend API development and React for the
+              frontend.
+            </p>
+          </div>
+        </div>
+        <div class="card-back">
+          <img
+            src="assets/apartment.svg"
+            alt="Project 3 SVG"
+            width="200"
+            height="200"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center" style="margin-top: 32px">
+    <div class="col-md-4 mb-4">
+      <div class="card card-custom">
+        <div class="card-front">
+          <div class="card-body">
+            <h5 class="card-title">Warehouse Management System</h5>
+            <p class="card-text">
+              Assisted in the development of a Warehouse Management System aimed
+              at optimising inventory management and order fulfilment processes.
+              Leveraged .NET 7 for backend API development and Angular 12 for
+              the frontend.
+            </p>
+          </div>
+        </div>
+        <div class="card-back">
+          <img
+            src="assets/warehouse.svg"
+            alt="Project 4 SVG"
+            width="200"
+            height="200"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card card-custom">
+        <div class="card-front">
+          <div class="card-body">
+            <h5 class="card-title">Employee Time Tracking</h5>
+            <p class="card-text">
+              Contributed to frontend development for an Employee Time Tracking
+              Dashboard using React. Designed interfaces to display employee
+              timings and productivity data, collaborating closely with backend
+              developers. Ensured responsiveness and visual appeal to meet
+              project objectives.
+            </p>
+          </div>
+        </div>
+        <div class="card-back">
+          <img
+            src="assets/attendance.svg"
+            alt="Project 5 SVG"
+            width="200"
+            height="200"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
