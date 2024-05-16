@@ -1,81 +1,95 @@
+/* Custom Navbar Color */
 .custom-navbar-color {
-    background-color: #1565C0;
+    background-color: #FF6B6B;
     padding: 1rem 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .navbar-brand {
+    transition: background-color 0.5s; /* Smooth background color transition */
+}
+
+.navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
-  }
-  
-  .navbar-nav .nav-link {
-    color: #fff;
-    transition: color 0.2s ease;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #ccc;
-  }
-  
-  .navbar-toggler-icon {
+}
+
+.navbar-nav .nav-link {
+    color: #FFD166;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #06D6A0;
+}
+
+.navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
-  
-  .col-md-6 {
+}
+
+.col-md-6 {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-  }
-  
-  .svg-container {
+}
+
+.svg-container {
     width: 100%;
     max-width: 300px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-  }
-  
-  .svg-container img {
+}
+
+.svg-container img {
     width: 100%;
     height: auto;
     object-fit: contain;
-  }
-  
-  h2 {
+    transition: transform 0.3s; /* Add hover effect to SVG image */
+}
+
+.svg-container img:hover {
+    transform: scale(1.1); /* Example of a hover effect */
+}
+
+h2 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #1565C0;
-  }
-  
-  p {
+    color: #FF6B6B;
+}
+
+p {
     font-size: 1.2rem;
     color: #333;
-  }
-  
-  .card-custom {
+}
+
+.row-intro {
+    background: linear-gradient(to right, #FFD166, #06D6A0); /* Add colorful gradient background */
+    padding: 2rem;
+    border-radius: 10px;
+    color: #333;
+}
+
+.card-custom {
     position: relative;
     width: 100%;
     height: 250px;
     perspective: 1000px;
-  }
-  
-  .card-front, .card-back {
+}
+
+.card-front, .card-back {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    transition: transform 0.6s;
+    transition: transform 0.6s, box-shadow 0.3s; /* Add transition effects */
     transform-style: preserve-3d;
-  }
-  
-  .card-front {
+}
+
+.card-front {
     background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -83,41 +97,43 @@
     align-items: center;
     justify-content: center;
     transform: rotateY(0deg);
-  }
-  
-  .card-back {
-    background-color: #f6faff;
+}
+
+.card-back {
+    background-color:  #fffef6;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     transform: rotateY(180deg);
-  }
-  
-  .card-custom:hover .card-front {
+}
+
+.card-custom:hover .card-front {
     transform: rotateY(-180deg);
-  }
-  
-  .card-custom:hover .card-back {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.card-custom:hover .card-back {
     transform: rotateY(0deg);
-  }
-  
-  .card-title {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.card-title {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #1565C0;
-  }
-  
-  .card-text {
+    color: #FF6B6B;
+}
+
+.card-text {
     font-size: 1rem;
     color: #495057;
-  }
-  
-  .card-text::first-letter {
+}
+
+.card-text::first-letter {
     font-size: 1.5em;
     font-weight: bold;
-  }
+}
 
-  .card {
+.card {
     --bs-card-border-width: 0; 
-  }
+}
