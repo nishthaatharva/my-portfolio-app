@@ -8,11 +8,12 @@ This project is a personal portfolio website built using Angular. It showcases m
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
 
 ## Introduction
 
 This portfolio website includes the following sections:
-- **Home**: An introduction to who I am and what I do.
+- **Introduction**: An introduction to who I am and what I do.
 - **Projects**: A showcase of various projects I've worked on.
 - **Contact**: A form where visitors can send me messages.
 
@@ -67,3 +68,8 @@ Make sure you have the following installed:
 To start the application, run:
 ```bash
 ng serve
+
+![Introduction](assets/images/intro.png)
+![Projects](assets/images/projects.png)
+![Contact Form](assets/images/contactform.png)
+![Mail Send](assets/images/sweetalert.png)
