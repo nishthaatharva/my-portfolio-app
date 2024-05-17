@@ -94,7 +94,3 @@ ng serve
 - **Mail send response**
 
 ![MailSent](src/assets/images/sweetalert.png)
-
-- **Whole page**
-
-![WholePage](src/assets/images/wholepage.png)
