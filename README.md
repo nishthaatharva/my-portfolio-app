@@ -8,8 +8,6 @@ This project is a personal portfolio website built using Angular. It showcases m
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Usage](#usage)
-- [Contact](#contact)
-- [License](#license)
 
 ## Introduction
 
