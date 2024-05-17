@@ -19,8 +19,6 @@ This portfolio website includes the following sections:
 
 ## Features
 
-![Introduction](src/assets/images/intro.png)
-
 - Responsive design
 - Interactive project cards with flip animations
 - Contact form integrated with EmailJS to send emails directly
@@ -70,7 +68,18 @@ Make sure you have the following installed:
 To start the application, run:
 ```bash
 ng serve
+```
 
-![Projects](assets/images/projects.png)
-![Contact Form](assets/images/contactform.png)
-![Mail Send](assets/images/sweetalert.png)
+## Screenshots
+
+- Introduction
+![Introduction](src/assets/images/intro.png)
+
+- Projects with flip animation
+![Projects](src/assets/images/projects.png)
+
+- Contact form with mail sending functionality
+![ContactForm](src/assets/images/contactform.png)
+
+- Mail send response
+![MailSent](src/assets/images/sweetalert.png)
