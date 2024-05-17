@@ -1,51 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-dark custom-navbar-color">
-  <div class="container">
-    <a class="navbar-brand" href="#">My Portfolio</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+<!-- introduction  -->
 <div class="container">
   <div class="row row-intro" style="margin-top: 80px">
     <div class="col-md-6">
-      <!-- Left side with SVG image -->
       <img
-        src="assets/profile-img.svg"
+        src="assets/undraw-resume.svg"
         alt="Profile Data SVG"
         width="500"
-        height="200"
+        height="300"
         style="margin-top: -20px; margin-left: -50px"
       />
     </div>
-    <div class="col-md-6">
-      <!-- Right side with name and description -->
+    <div class="col-md-6" style="margin-top: 55px">
       <h3 style="text-align: right">Hi There, I am</h3>
       <h3
         [style.font-family]="'Dancing Script'"
-        style="font-size: 50px; color: #fff"
+        style="font-size: 50px; color: #ff6b6b"
       >
         {{ name }}
       </h3>
@@ -54,10 +23,11 @@
   </div>
 </div>
 
+<!-- projects -->
 <div class="container mt-5">
   <div class="row" style="margin-top: 50px">
     <div class="col-md-12 text-center">
-      <h2>Projects</h2>
+      <h2 class="section-title text-center">Projects</h2>
     </div>
   </div>
   <div class="row" style="margin-top: 32px">
@@ -176,6 +146,79 @@
             height="200"
           />
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- contact -->
+<div class="container mt-5">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-md-12">
+      <h2 class="section-title text-center">Contact Me</h2>
+    </div>
+    <div class="col-md-6">
+      <div>
+        <img
+          src="assets/undraw-mail.svg"
+          alt="Contact SVG"
+          width="100%"
+          height="auto"
+        />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="contact-form">
+        <p class="mb-4">
+          Feel free to reach out for any inquiries or collaborations.
+        </p>
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Your Name"
+              name="name"
+              ngModel
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Your Email"
+              name="email"
+              ngModel
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Your Message"
+              name="message"
+              ngModel
+              required
+            ></textarea>
+          </div>
+          <div class="text-center">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              [disabled]="contactForm.invalid"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
