@@ -1,27 +1,71 @@
-# MyPortfolioApp
+# My Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+This project is a personal portfolio website built using Angular. It showcases my projects and provides a contact form for visitors to reach out to me.
 
-## Development server
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Contact](#contact)
+- [License](#license)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Introduction
 
-## Code scaffolding
+This portfolio website includes the following sections:
+- **Home**: An introduction to who I am and what I do.
+- **Projects**: A showcase of various projects I've worked on.
+- **Contact**: A form where visitors can send me messages.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- Responsive design
+- Interactive project cards with flip animations
+- Contact form integrated with EmailJS to send emails directly
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Technologies Used
 
-## Running unit tests
+- Angular
+- Bootstrap
+- EmailJS
+- SweetAlert2
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Setup
 
-## Running end-to-end tests
+### Prerequisites
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Make sure you have the following installed:
+- Node.js
+- Angular CLI
 
-## Further help
+### Installation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/my-portfolio.git
+    cd my-portfolio
+    ```
+
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Set up EmailJS:
+    - Sign up at [EmailJS](https://www.emailjs.com/).
+    - Create a new email service and email template.
+    - Note your `serviceID`, `templateID`, and `userID`.
+
+4. Update the `EmailService` in `src/app/email.service.ts` with your EmailJS credentials:
+    ```typescript
+    private serviceID = 'your_service_id';
+    private templateID = 'your_template_id';
+    private userID = 'your_user_id';
+    ```
+
+### Running the Application
+
+To start the application, run:
+```bash
+ng serve
