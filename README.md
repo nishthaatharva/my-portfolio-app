@@ -19,7 +19,7 @@ This portfolio website includes the following sections:
 
 ## Features
 
-![Introduction](src\assets\images\intro.png)
+![Introduction](src/assets/images/intro.png)
 
 - Responsive design
 - Interactive project cards with flip animations
