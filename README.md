@@ -94,3 +94,7 @@ ng serve
 - **Mail send response**
 
 ![MailSent](src/assets/images/sweetalert.png)
+
+- **Mail received**
+
+![MailReceived](src/assets/images/email.png)
